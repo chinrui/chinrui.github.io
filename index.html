@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <title>Rui CHEN&#39;s HOMEPAGE</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Website title" />
+<meta name="author" content="Rui CHEN" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.56.0" />        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">        <link rel="manifest" href="site.webmanifest">        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="favicon.ico">        
+
+
+  <link
+    rel="stylesheet"
+    href="/css/bootstrap/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+
+  <link
+    id="color-CSS"
+    rel="stylesheet"
+    href="/css/aafu_light.css"
+    type="text/css"
+  />
+  <link rel="stylesheet" href="/css/aafu.css" />
+
+  <script>
+    var themeColor = document.querySelector("meta[name=theme-color]");
+    window.onload = function() {
+      themeColor.content = getComputedStyle(document.body)["background-color"];
+      let defaultActivePanel = document.querySelector(".accordion.active")
+        .nextElementSibling;
+      defaultActivePanel.style.maxHeight =
+        defaultActivePanel.scrollHeight + "px";
+    };
+    window.onresize = function() {
+      document.querySelector(".active").nextElementSibling.style.maxHeight =
+        document.querySelector(".active").nextElementSibling.scrollHeight +
+        "px";
+    };
+  </script>
+</head>
+<body class="container" style="max-width: 1400px;">
+<div class="ml-auto mr-auto row row-eq-height rounded">
+  <div class="col-md-5 text-center p-2 mt-3">
+    <div class="profile-area rounded text-center position-relative">
+      
+<div class="toggleSwitchContainer" style="width: 45px; height: 45px;">
+  <i
+    class="fas fa-toggle-on zoomlink"
+    id="toggle"
+    title="Toggle Theme"
+    onclick="toggleTheme(this)"
+  ></i>
+</div>
+
+<script>
+  const mainTheme =
+    "\/css\/aafu_light.css";
+  const altTheme =
+    "\/css\/aafu_dark.css";
+  const currentCSS = document.querySelector("#color-CSS");
+  function toggleTheme(elem) {
+    
+    
+    elem.classList.toggle("fa-toggle-off");
+    elem.classList.toggle("fa-toggle-on");
+    if (currentCSS.href.includes(mainTheme)) {
+      currentCSS.setAttribute("href", "." + altTheme);
+    } else {
+      currentCSS.setAttribute("href", "." + mainTheme);
+    }
+  }
+
+  function changeThemeColor() {
+    themeColor.content = getComputedStyle(document.body)["background-color"];
+  }
+  const thisBody = document.body;
+  thisBody.addEventListener("webkitTransitionEnd", changeThemeColor);
+  thisBody.addEventListener("transitionend", changeThemeColor);
+</script>
+
+
+      <div class="d-flex justify-content-center pt-2">
+  <div class="w-100 h-100">
+    <img
+      class="rounded rounded-circle mt-4"
+      src="/images/profile.jpg"
+      alt="Rui CHEN"
+      style="width: 95%; max-width: 300px;"
+    />
+  </div>
+</div>
+
+      <div class="p-2">
+        <h1 class="mb-0">Rui CHEN</h1>
+<h2 class="mb-0">Graduate Student</h2>
+<h3 class="mb-0">Kyoto University, Japan</h3>
+<div class="mt-2 d-flex flex-wrap justify-content-center">
+  
+  <div style="height:45px; width:45px;">
+    <a href="mailto:%20chinrui_333@hotmail.com">
+      <i class="zoomlink mt-1 far fa-envelope"></i>
+    </a>	
+    
+  </div>
+  
+</div>
+
+        
+<footer class="mb-4">
+  
+</footer>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-7 pt-2 mt-3">
+    
+    <h2 class="accordion  active ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-user"></i>
+        About Me</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      <p class="markdownify">
+  I studied Computer Science related subjects like <font color=brown>rogramming, algorithm, and machine learning</font> for about 7 years. I am very familiar with <font color=brown>R, Python, sklearn and Keras.</font>
+  
+  <br />
+  <br />
+  I am mostly interested in:
+  <br />
+  <font color=cc6699>Data Science</font>
+  <br />
+  <font color=cc6699>Machine Learning</font>
+  <br />
+  <font color=cc6699>Social and Information Network Analysis</font>
+  <br />
+  <font color=cc6699>Computational Social Science</font>
+  <br />
+  <br />
+  My <strong>current research</strong> is about game theory to optimize the prediction model based on the incentive system for agents, which has high relative with human-computer interaction. I use different kinds of incentive mechanism, which starting from the area in <font color=brown>social networking and market economics</font> to reward agents to choose high-quality factors and induce collective intelligence for the high prediction accuracy. For example, it can be applied to economic market or the prediction of presidential selection.
+
+  
+  <br />
+  <br />
+  I am excited that I could use my knowledge from computer science to a bigger world. Meanwhile, I am also considering about how could the research contribute to the society.
+  
+    
+</p>
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class=""></i>
+        </span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-graduation-cap"></i>
+        Education</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      <p class="markdownify">
+
+<dl>
+  <dt><strong>Academic Exchange in EPFL</strong></dt>
+  <dd class="mb-0 ml-3"><strong>Sep. 2019 - Feb. 2020</strong> &middot; 
+    <a href="https://www.epfl.ch/schools/ic/" >
+      École Polytechnique Fédérale de Lausanne (EPFL)
+    </a>
+
+  </dd>
+  
+  
+</dl>
+
+<dl>
+  <dt><strong>M.S. in Computer Science</strong></dt>
+  <dd class="mb-0 ml-3"><strong>Apr. 2018 - Mar. 2020</strong> &middot; 
+    <a href="http://www.soc.i.kyoto-u.ac.jp/en/" >
+      Kyoto University
+    </a>
+
+  </dd>
+  
+  
+  <dd class="mb-0 ml-4">
+    Affiliation:
+    <a href="http://www.ai.soc.i.kyoto-u.ac.jp/en/"
+      ><i><strong>Ishida and Matsubara Laboratory</strong></i></a
+    >
+  </dd>
+  
+</dl>
+
+<dl>
+  <dt><strong>Research Student in Academic Center for Computing and Media Studies</strong></dt>
+  <dd class="mb-0 ml-3"><strong>Apr. 2017 - Mar. 2018</strong> &middot; 
+    <a href="http://www.media.kyoto-u.ac.jp/accms_web/en/" >
+      Kyoto University
+    </a>
+
+  </dd>
+  
+  
+  <dd class="mb-0 ml-4">
+    Affiliation:
+    <a href="http://www.viz.media.kyoto-u.ac.jp/html/en/index.html"
+      ><i><strong>Visualization Laboratory</strong></i></a
+    >
+  </dd>
+  
+</dl>
+
+<dl>
+  <dt><strong>B.S. in Information and Communication Enginnering</strong></dt>
+  <dd class="mb-0 ml-3"><strong>Sep. 2012 - Jun. 2016</strong> &middot; 
+    <a href="https://en.uestc.edu.cn/" >
+      University Of Electronic Science And Technology Of China (UESTC)
+    </a>
+
+  </dd>
+  
+  
+</dl>
+
+</p>
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-project-diagram"></i>
+        Projects</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      <dl>
+  
+  <dt>
+    <a  style="color: blue; font-size: 18ps;">Improving the accuracy of collective prediction by maintaining the diversity of opinions</a>
+  
+  </dt>
+  <dd class="mb-0 ml-3 markdownify"><strong><font color=cc9999>Background:</font></strong> Decisions made by a single individual tend to be inaccurate compared to decisionsmade by majority. Collective intelligence is a process of sharing or group intelligence, and assembling opinions from others into decision-making<br /><strong><font color=cc9999>Add Incentive:</font></strong> Based on previous research to give incentive for agents and induce collective intelligence, in order to improve the prediction accuracy.<br /><strong><font color=cc9999>Evaluation:</font></strong> Different incentives can be used to dynamically improve the prediction accuracy with different number of agents participate in.</dd>
+  
+  
+  <dt>
+    <a  style="color: blue; font-size: 18ps;">Data-based traffic route planning in Japan</a>
+  
+  </dt>
+  <dd class="mb-0 ml-3 markdownify"><strong><font color=cc9999>Data Processing:</font></strong> Collect and process data to obtain correlations between on geographic information data and commuting time among Japanese cities.<br /><strong><font color=cc9999>Data Analysis and Visualization:</font></strong> Analyze the traffic connections between cities (i.e. the means of transportation used, the time, the number of nodes passing through) to obtain the geographic transportation network graph between cities in Japan.<br /><strong><font color=cc9999>Traffic Optimization:</font></strong> Find hot spot cities through data visualization,and let them as radiation centers to add faster or new traffic routes, in order to reduce the commuting time of public equipment between cities.</dd>
+  
+  
+  <dt>
+    <a  style="color: blue; font-size: 18ps;">Database-based web application development</a>
+  
+  </dt>
+  <dd class="mb-0 ml-3 markdownify">Used Ruby on Rails to develop database-based web application BBS.<br />Finished basic functions, such as, registration, post data statistics and several database operations.<br /></dd>
+  
+  
+</dl>
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-book"></i>
+        Publications</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      
+
+<p>
+  
+2019.
+
+
+  
+Rui Chen, Shigeo Matsubara.
+
+
+  
+Improving the Accuracy of the Collective Prediction by Maintaining the Diversity of Opinions: Preliminary Report.
+
+
+  
+Annual Conference of Japanese Society and Artificual Intelligence (JSAI).
+
+
+</p>
+
+
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-cogs"></i>
+        Skills and Interests</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+      id="skill-panel"
+      
+    >
+      <script>
+  let skillPanel = document.querySelector("#skill-panel")
+    .previousElementSibling;
+  skillPanel.addEventListener("click", function() {
+    let skillBars = document.querySelectorAll("#skill-percent");
+    skillBars.forEach(elem => {
+      elem.style.width = elem.classList[0];
+    });
+  });
+</script>
+
+<code>Motivation in Research</code>
+<div class="w-100 skillbar mt-1 mb-3">
+  <div id="skill-percent" class="99%" style="width: 0;"></div>
+</div>
+
+<code>Programing Languages: Python, R, Matlab etc.</code>
+<div class="w-100 skillbar mt-1 mb-3">
+  <div id="skill-percent" class="85%" style="width: 0;"></div>
+</div>
+
+<code>Average (English, Mandarin, Japanese)</code>
+<div class="w-100 skillbar mt-1 mb-3">
+  <div id="skill-percent" class="80%" style="width: 0;"></div>
+</div>
+
+<code>Basic Knowledge in Mathematics &amp; Algorithms</code>
+<div class="w-100 skillbar mt-1 mb-3">
+  <div id="skill-percent" class="85%" style="width: 0;"></div>
+</div>
+
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-gamepad"></i>
+        Hobbies</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      <p class="markdownify">
+<ul class="pl-0">
+  
+  <li class="list-unstyled mb-2">Cooking Sichuan cuisines &amp; Enjoy delicious food with friends</li>
+  
+  <li class="list-unstyled mb-2">Data Analysis Competition</li>
+  
+  <li class="list-unstyled mb-2">Also Like doing research on Joke-Telling &amp; Anime</li>
+  
+</ul>
+</p>
+
+    </div>
+    
+    <script src="/js/accordion.js"></script>
+  </div>
+</div>
+
+  </body>
+</html>
